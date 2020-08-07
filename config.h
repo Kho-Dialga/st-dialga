@@ -10,6 +10,8 @@ static char *font = "JetBrains Mono Nerd Font:pixelsize=12:antialias=true:autohi
 static char *font2[] = {
 	"Noto Color Emoji:pixelsize=12:antialias=true:autohint=true", // Emoji
 	"Hack Nerd Font Mono:pixelsize=13:antialias=true:autohint=true", // Powerline
+	"Noto Sans CJK JP:pixelsize=16:style=Bold:antialias=true:autohint=true", // Japanese
+	"Braille:pixelsize=16:antialias=true:autohint=true", // Braille
 };
 
 static int borderpx = 2;
