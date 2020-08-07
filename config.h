@@ -11,7 +11,12 @@ static char *font2[] = {
 	"Noto Color Emoji:pixelsize=12:antialias=true:autohint=true", // Emoji
 	"Hack Nerd Font Mono:pixelsize=13:antialias=true:autohint=true", // Powerline
 	"Noto Sans CJK JP:pixelsize=16:style=Bold:antialias=true:autohint=true", // Japanese
-	"Braille:pixelsize=16:antialias=true:autohint=true", // Braille
+	"Noto Sans Runic:pixelsize=16:antialias=true:autohint=true", // Runes
+	"Noto Sans Thai:pixelsize=16:style=Bold:antialias=true:autohint=true", // Thai
+	"Noto Serif Ethiopic:style=Bold:pixelsize=16:antialias=true:autohint=true", // Ethiopiuc
+	"Noto Sans Hebrew:style=Bold:pixelsize=16:antialias=true:autohint=true", // Hebrew
+	"Noto Sans Math:pixelsize=16:antialias=true:autohint=true", // Math Symbols
+	"Symbola:pixelsize=16:antialias=true:autohint=true", // Symbols
 };
 
 static int borderpx = 2;
