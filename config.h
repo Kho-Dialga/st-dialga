@@ -10,10 +10,14 @@ static char *font = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";
 static char *font2[] = {
 	"Noto Color Emoji:pixelsize=12:antialias=true:autohint=true", // Emoji
 	"Noto Sans CJK JP:pixelsize=16:style=Bold:antialias=true:autohint=true", // Japanese
+	"Noto Sans CJK KR:pixelsize=16:style=Bold:antialias=true:autohint=true", // Korean
+	"Noto Sans CJK SC:pixelsize=16:style=Bold:antialias=true:autohint=true", // Simplified Chinese
+	"Noto Sans CJK TC:pixelsize=16:style=Bold:antialias=true:autohint=true", // Traditional Chinese
+	"Noto Sans Arabic:pixelsize=16:style=Bold:antialias=true:autohint=true", // Arabic
 	"Noto Sans Runic:pixelsize=16:antialias=true:autohint=true", // Runes
 	"Noto Sans Georgian:pixelsize=16:antialias=true:autohint=true", // Georgian
 	"Noto Sans Thai:pixelsize=16:style=Bold:antialias=true:autohint=true", // Thai
-	"Noto Serif Ethiopic:style=Bold:pixelsize=16:antialias=true:autohint=true", // Ethiopiuc
+	"Noto Serif Ethiopic:style=Bold:pixelsize=16:antialias=true:autohint=true", // Ethiopic
 	"Noto Sans Hebrew:style=Bold:pixelsize=16:antialias=true:autohint=true", // Hebrew
 	"Noto Sans Math:pixelsize=16:antialias=true:autohint=true", // Math Symbols
 	"Symbola:pixelsize=16:antialias=true:autohint=true", // Symbols
