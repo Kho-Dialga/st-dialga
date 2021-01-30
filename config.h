@@ -21,6 +21,7 @@ static char *font2[] = {
 	"Noto Sans Hebrew:style=Bold:pixelsize=16:antialias=true:autohint=true", // Hebrew
 	"Noto Sans Math:pixelsize=16:antialias=true:autohint=true", // Math Symbols
 	"Symbola:pixelsize=16:antialias=true:autohint=true", // Symbols
+	"DejaVu Sans:pixelsize=12:antialias=true:autohint=true", // Unicode fix
 };
 
 static int borderpx = 2;
@@ -70,8 +71,8 @@ int allowwindowops = 0;
  * near minlatency, but it waits longer for slow updates to avoid partial draw.
  * low minlatency will tear/flicker more, as it can "detect" idle too early.
  */
-static double minlatency = 8;
-static double maxlatency = 33;
+static double minlatency = 1;
+static double maxlatency = 1;
 
 /*
  * blinking timeout (set to 0 to disable blinking) for the terminal blinking
@@ -254,11 +255,9 @@ static MouseShortcut mshortcuts[] = {
 #define MODKEY Mod1Mask
 #define TERMMOD (Mod1Mask|ShiftMask)
 
-static char *openurlcmd[] = { "/bin/sh", "-c", "st-urlhandler", "externalpipe", NULL };
+static char *openurlcmd[] = { "/bin/sh", "-c", "st-urlhandler -o", "externalpipe", NULL };
 
-static char *copyurlcmd[] = { "/bin/sh", "-c",
-    "tmp=$(sed 's/.*│//g' | tr -d '\n' | grep -aEo '(((http|https|gopher|gemini|ftp|ftps|git)://|www\\.)[a-zA-Z0-9.]*[:]?[a-zA-Z0-9./@$&%?$#=_-~]*)|((magnet:\\?xt=urn:btih:)[a-zA-Z0-9]*)' | uniq | sed 's/^www./http:\\/\\/www\\./g' ); IFS=; [ ! -z $tmp ] && echo $tmp | dmenu -i -p 'Copy which url?' -l 10 | tr -d '\n' | xclip -selection clipboard",
-    "externalpipe", NULL };
+static char *copyurlcmd[] = { "/bin/sh", "-c", "st-urlhandler -c",    "externalpipe", NULL };
 
 static char *copyoutput[] = { "/bin/sh", "-c", "st-copyout", "externalpipe", NULL };
 
